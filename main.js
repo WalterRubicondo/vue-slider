@@ -29,16 +29,6 @@ var app = new Vue ({
       selector: function (index) {
         this.index = index;
       },
-      autoPlay: function () {
-        var temp = this;
-        setInterval(function () {
-          if (temp.index < temp.imgArray.length - 1) {
-            temp.index ++;
-          } else {
-            temp.index = 0;
-          }
-        }, 3000);
-    }
   },
   created: function () {
     setInterval(this.next,3000);
